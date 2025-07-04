@@ -21,7 +21,7 @@ interface AnalyticsData {
 
 const AdminAnalytics: React.FC = () => {
   const [stats, setStats] = useState<AdminStats | null>(null);
-  const [_analytics, setAnalytics] = useState<AnalyticsData | null>(null);
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -29,12 +29,8 @@ const AdminAnalytics: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const [statsData, analyticsData] = await Promise.all([
-        getAdminStatistics(),
-        getAdminAnalytics()
-      ]);
+      const statsData = await getAdminStatistics();
       setStats(statsData);
-      setAnalytics(analyticsData);
     } catch (err: any) {
       setError(err.message || 'Failed to fetch analytics');
     } finally {

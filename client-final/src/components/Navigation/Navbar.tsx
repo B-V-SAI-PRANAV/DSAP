@@ -7,41 +7,9 @@ import { useEffect, useState } from 'react';
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
-  const [_userProgress, setUserProgress] = useState<number>(0);
 
-  useEffect(() => {
-    if (user) {
-      const fetchProgress = async () => {
-        try {
-          const [allTopics, userProgress] = await Promise.all([
-            getAllTopics(),
-            getUserDetailedProgress()
-          ]);
-          if (allTopics && allTopics.length > 0) {
-            // Map topicId to progress
-            const progressMap = new Map<string, number>();
-            userProgress.forEach(p => progressMap.set(p.topicId, p.progress || 0));
-            // Only include topics with progress > 0
-            const startedProgress = allTopics
-              .map(t => progressMap.get(t.id) || 0)
-              .filter(p => p > 0);
-            const avg = startedProgress.length > 0
-              ? startedProgress.reduce((sum, p) => sum + p, 0) / startedProgress.length
-              : 0;
-            setUserProgress(Math.round(avg));
-          } else {
-            setUserProgress(0);
-          }
-        } catch {
-          setUserProgress(0);
-        }
-      };
-      fetchProgress();
-      const handler = () => fetchProgress();
-      window.addEventListener('user-progress-updated', handler);
-      return () => window.removeEventListener('user-progress-updated', handler);
-    }
-  }, [user]);
+
+
 
   return (
     <nav className="bg-blue-600 text-white shadow-lg">

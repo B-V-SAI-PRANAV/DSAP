@@ -72,7 +72,7 @@ const MasteryTopicCard: React.FC<MasteryTopicCardProps> = ({ topic, onClick, pro
     return () => {
       window.removeEventListener('user-progress-updated', handleProgressUpdate);
     };
-  }, [topic.id, progress]);
+  }, [topic.id, progress, cheatSheets, topic.cheatSheets]);
 
   return (
     <div className="border rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer" onClick={() => {
