@@ -1,0 +1,277 @@
+{
+  "topics": {
+    "arrays": {
+      "pdfs": [
+        "/arrays.pdf"
+      ],
+      "youtube": [
+        "https://youtu.be/n60Dn0UsbEk?si=YGIL_RgJEe_Py-7d"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/two-sum/",
+        "https://leetcode.com/problems/maximum-subarray/",
+        "https://leetcode.com/problems/container-with-most-water/",
+        "https://leetcode.com/problems/trapping-rain-water/"
+      ]
+    },
+    "linked-lists": {
+      "pdfs": [
+        "/linked-lists.pdf"
+      ],
+      "youtube": [
+        "https://youtu.be/58YbpRDc4yw?si=1H8gN2O3t2NiSngB",
+        "https://youtu.be/70tx7KcMROc?si=OE0wvuFa4_lTWF4e"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/reverse-linked-list/",
+        "https://leetcode.com/problems/linked-list-cycle/",
+        "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+      ]
+    },
+    "stacks": {
+      "pdfs": [
+        "/pdfs/stacks-cheatsheet.pdf",
+        "/pdfs/monotonic-stack.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=0kX6hO8hw3Q",
+        "https://youtube.com/watch?v=zx5Sw9130L4"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/valid-parentheses/",
+        "https://leetcode.com/problems/min-stack/",
+        "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        "https://leetcode.com/problems/daily-temperatures/"
+      ]
+    },
+    "queues": {
+      "pdfs": [
+        "/pdfs/queues-cheatsheet.pdf",
+        "/pdfs/priority-queue.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=3Et9MrMc02A",
+        "https://youtube.com/watch?v=wptevk0flhY"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/implement-queue-using-stacks/",
+        "https://leetcode.com/problems/design-circular-queue/",
+        "https://leetcode.com/problems/task-scheduler/",
+        "https://leetcode.com/problems/sliding-window-maximum/"
+      ]
+    },
+    "trees": {
+      "pdfs": [
+        "/pdfs/trees-cheatsheet.pdf",
+        "/pdfs/bst-operations.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=oSWTXwtMVOE",
+        "https://youtube.com/watch?v=QN9hnmAgmOc"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "https://leetcode.com/problems/validate-binary-search-tree/",
+        "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+      ]
+    },
+    "graphs": {
+      "pdfs": [
+        "/pdfs/graphs-cheatsheet.pdf",
+        "/pdfs/graph-algorithms.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=pcKY4hjDrxk",
+        "https://youtube.com/watch?v=7fujbpJ0LB4"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/number-of-islands/",
+        "https://leetcode.com/problems/course-schedule/",
+        "https://leetcode.com/problems/clone-graph/",
+        "https://leetcode.com/problems/word-ladder/"
+      ]
+    },
+    "hashing": {
+      "pdfs": [
+        "/pdfs/hashing-cheatsheet.pdf",
+        "/pdfs/hash-table-design.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=shs0KM3wKv8",
+        "https://youtube.com/watch?v=UF9u6SX6FB8"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/valid-anagram/",
+        "https://leetcode.com/problems/group-anagrams/",
+        "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "https://leetcode.com/problems/subarray-sum-equals-k/"
+      ]
+    },
+    "dynamic-programming": {
+      "pdfs": [
+        "/pdfs/dp-cheatsheet.pdf",
+        "/pdfs/dp-patterns.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=oBt53YbR9Kk",
+        "https://youtube.com/watch?v=Hdr64lKQ3e4"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/climbing-stairs/",
+        "https://leetcode.com/problems/coin-change/",
+        "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "https://leetcode.com/problems/edit-distance/"
+      ]
+    },
+    "greedy-algorithms": {
+      "pdfs": [
+        "/pdfs/greedy-cheatsheet.pdf",
+        "/pdfs/greedy-patterns.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=ARvQcqJ_-NY",
+        "https://youtube.com/watch?v=2Uq7p7HE0TI"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/jump-game/",
+        "https://leetcode.com/problems/gas-station/",
+        "https://leetcode.com/problems/task-scheduler/",
+        "https://leetcode.com/problems/partition-labels/"
+      ]
+    },
+    "divide-and-conquer": {
+      "pdfs": [
+        "/pdfs/divide-conquer-cheatsheet.pdf",
+        "/pdfs/recursion-patterns.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=P6RZZMu_maU",
+        "https://youtube.com/watch?v=7h1s2SojIRw"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/merge-sort/",
+        "https://leetcode.com/problems/quick-sort/",
+        "https://leetcode.com/problems/binary-search/",
+        "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+      ]
+    },
+    "backtracking": {
+      "pdfs": [
+        "/pdfs/backtracking-cheatsheet.pdf",
+        "/pdfs/state-space-search.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=s9fokUqJ76A",
+        "https://youtube.com/watch?v=0DeznFqrgAI"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/n-queens/",
+        "https://leetcode.com/problems/sudoku-solver/",
+        "https://leetcode.com/problems/permutations/",
+        "https://leetcode.com/problems/combination-sum/"
+      ]
+    },
+    "advanced-topics": {
+      "pdfs": [
+        "/pdfs/advanced-algorithms.pdf",
+        "/pdfs/competitive-programming.pdf"
+      ],
+      "youtube": [
+        "https://youtube.com/watch?v=8hHWpuAPBQo",
+        "https://youtube.com/watch?v=WwfhLC16bis"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "https://leetcode.com/problems/regular-expression-matching/",
+        "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+      ]
+    }
+  },
+  "subtopics": {
+    "sub_arrays_0": {
+      "pdfs": ["/pdfs/1d-arrays-basics.pdf"],
+      "youtube": ["https://youtu.be/239ubH043lI?si=n03b6AT_ehJ_SCoF"],
+      "leetcode": [
+        "https://leetcode.com/problems/two-sum/",
+        "https://leetcode.com/problems/find-pivot-index/"
+      ]
+    },
+    "sub_arrays_1": {
+      "pdfs": ["/pdfs/2d-arrays-guide.pdf"],
+      "youtube": ["https://youtu.be/v4J2bEQF6jk?si=IzY1wOb_001fvq--"],
+      "leetcode": [
+        "https://leetcode.com/problems/rotate-image/",
+        "https://leetcode.com/problems/spiral-matrix/"
+      ]
+    },
+    "sub_arrays_2": {
+      "pdfs": ["/pdfs/dynamic-arrays.pdf"],
+      "youtube": ["https://youtu.be/jzJlq35dQII?si=8fDOEjbcXif8fzij"],
+      "leetcode": [
+        "https://leetcode.com/problems/container-with-most-water/",
+        "https://leetcode.com/problems/trapping-rain-water/"
+      ]
+    },
+    "sub_arrays_3": {
+      "pdfs": ["/pdfs/prefix-sum.pdf"],
+      "youtube": ["https://youtu.be/5_DFKL4zYLc?si=FQv3AkwEjvURDu_T"],
+      "leetcode": [
+        "https://leetcode.com/problems/range-sum-query-immutable/",
+        "https://leetcode.com/problems/subarray-sum-equals-k/"
+      ]
+    },
+    "sub_arrays_4": {
+      "pdfs": ["/pdfs/two-pointer-sliding-window.pdf"],
+      "youtube": ["https://youtube.com/playlist?list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL&si=ZxAciTMzEwI2agt-"],
+      "leetcode": [
+        "https://leetcode.com/problems/container-with-most-water/",
+        "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "https://leetcode.com/problems/sliding-window-maximum/"
+      ]
+    },
+    "sub_arrays_5": {
+      "pdfs": ["/pdfs/kadanes-algorithm.pdf"],
+      "youtube": ["https://youtu.be/AHZpyENo7k4?si=FhvwBYmgA0cpZdPx"],
+      "leetcode": [
+        "https://leetcode.com/problems/maximum-subarray/",
+        "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+      ]
+    },
+    "sub_arrays_6": {
+      "pdfs": ["/pdfs/array-rotation.pdf"],
+      "youtube": ["https://youtu.be/wvcQg43_V8U?si=bKh5iw1f8NkK6bFS"],
+      "leetcode": [
+        "https://leetcode.com/problems/rotate-array/",
+        "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+      ]
+    },
+    "sub_arrays_7": {
+      "pdfs": ["/pdfs/searching-algorithms.pdf"],
+      "youtube": [
+        "https://youtu.be/_HRA37X8N_Q?si=DJUJkQTSU-Maw69K",
+        "https://youtu.be/f6UU7V3szVw?si=3Y-b63X9w1ELctqy",
+        "https://youtu.be/enI_KyGLYPo?si=eNQpJtagOQ5Mk_Eg"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/binary-search/",
+        "https://leetcode.com/problems/search-a-2d-matrix/"
+      ]
+    },
+    "sub_arrays_8": {
+      "pdfs": ["/pdfs/sorting-algorithms.pdf"],
+      "youtube": [
+        "https://youtu.be/F5MZyqRp_IM?si=K7z4InlWMbl4ll5C",
+        "https://youtu.be/Nd4SCCIHFWk?si=yxDCZYUvxfWIybyq",
+        "https://youtu.be/By_5-RRqVeE?si=vJ_AHo3p0gU5rVuo",
+        "https://youtu.be/JfinxytTYFQ?si=EuvBQl7Nx0hVOINg"
+      ],
+      "leetcode": [
+        "https://leetcode.com/problems/sort-an-array/",
+        "https://leetcode.com/problems/merge-sorted-array/"
+      ]
+    }
+  }
+} 
