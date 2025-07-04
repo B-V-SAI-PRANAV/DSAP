@@ -1,24 +1,6 @@
 // FileName: MultipleFiles/adminApi.ts
 import api from './api';
-import { User, AdminStats } from '../types'; // Import types from consolidated file
-
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/api';
-
-// Helper to get auth token (assuming admin also uses JWT)
-const getAuthHeaders = () => {
-  const user = localStorage.getItem('user');
-  if (user) {
-    const parsedUser = JSON.parse(user);
-    if (parsedUser.token) {
-      return {
-        headers: {
-          Authorization: `Bearer ${parsedUser.token}`,
-        },
-      };
-    }
-  }
-  return {};
-};
+import { AdminStats } from '../types'; // Import types from consolidated file
 
 // User Management
 export const getAdminStatistics = async (): Promise<AdminStats> => {
@@ -208,12 +190,12 @@ export const uploadResource = async (file: File, resourceData: any) => {
 };
 
 export const bulkImportTopics = async (topicsData: any[]) => {
-  const response = await api.post('/admin/bulk-import-topics', { topics: topicsData });
+  const response = await api.post('/admin/bulk-import/topics', { topics: topicsData });
   return response.data;
 };
 
 export const bulkImportResources = async (resourcesData: any[]) => {
-  const response = await api.post('/admin/bulk-import-resources', { resources: resourcesData });
+  const response = await api.post('/admin/bulk-import/resources', { resources: resourcesData });
   return response.data;
 };
 

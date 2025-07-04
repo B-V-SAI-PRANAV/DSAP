@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ProblemList from '../components/Problem/ProblemList';
 import ResourceCard from '../components/Resource/ResourceCard';
 import { getMasteryTopicDetails, getTopicProblemProgress, getResourceCompletionStatus, updateUserProgress } from '../services/api';
@@ -8,7 +8,6 @@ import ProgressBar from '../components/Navigation/ProgressBar';
 
 const MasteryTopicPage: React.FC = () => {
   const { topicId } = useParams<{ topicId: string }>();
-  const navigate = useNavigate(); // Replaced useHistory with useNavigate
   const [topic, setTopic] = useState<MasteryTopicDetail | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -124,7 +123,7 @@ const MasteryTopicPage: React.FC = () => {
     const handler = () => handleProgressUpdate();
     window.addEventListener('user-progress-updated', handler);
     return () => window.removeEventListener('user-progress-updated', handler);
-  }, [topicId, topic]);
+  }, [topicId, topic, fetchCompletions, handleProgressUpdate]);
 
   if (isLoading) return <div className="text-center py-8">Loading mastery topic...</div>;
   if (error) return <div className="text-red-500 text-center py-8">{error}</div>;

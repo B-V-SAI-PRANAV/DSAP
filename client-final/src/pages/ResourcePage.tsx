@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTopicResources } from '../services/api';
-import ResourceCard from '../components/Resource/ResourceCard';
+
 import { Resource } from '../types';
 
 const ResourcePage: React.FC = () => {

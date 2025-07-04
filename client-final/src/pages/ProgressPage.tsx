@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import ProgressTimeline from '../components/Progress/ProgressTimeline';
 import TopicProgressChart from '../components/Progress/TopicProgressChart';
-import { getUserDetailedProgress, getAllTopics, getTopicProblemProgress, getTopicDetails, getResourceCompletionStatus } from '../services/api';
+import { getAllTopics, getTopicProblemProgress, getTopicDetails, getResourceCompletionStatus } from '../services/api';
 import { TopicProgress } from '../types'; // Import TopicProgress from consolidated types
 
 const ProgressPage: React.FC = () => {
