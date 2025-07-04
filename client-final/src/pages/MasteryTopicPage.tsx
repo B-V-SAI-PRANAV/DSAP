@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import ProblemList from '../components/Problem/ProblemList';
 import ResourceCard from '../components/Resource/ResourceCard';
@@ -20,7 +20,7 @@ const MasteryTopicPage: React.FC = () => {
   const getRealTopicId = (id: string | undefined) => id ? id.replace(/^mastery_/, '') : '';
 
   // Helper to fetch completions for the current topic
-  const fetchCompletions = async (topicObj: MasteryTopicDetail | null) => {
+  const fetchCompletions = useCallback(async (topicObj: MasteryTopicDetail | null) => {
     const realTopicId = getRealTopicId(topicId);
     if (realTopicId && topicObj) {
       // Problems
@@ -40,10 +40,10 @@ const MasteryTopicPage: React.FC = () => {
         setQuizScore(topicObj.lastQuizScore);
       }
     }
-  };
+  }, [topicId]);
 
   // Function to handle progress updates
-  const handleProgressUpdate = async () => {
+  const handleProgressUpdate = useCallback(async () => {
     const realTopicId = getRealTopicId(topicId);
     if (realTopicId) {
       // Always re-fetch the latest topic details
@@ -70,7 +70,7 @@ const MasteryTopicPage: React.FC = () => {
       }
       // --- END NEW LOGIC ---
     }
-  };
+  }, [topicId, fetchCompletions, completedProblems.length, completedResources.length]);
 
   const calculateCombinedProgress = () => {
     if (!topic) return 0;

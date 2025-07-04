@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getLearningPath, getAdaptiveLearningPath, getTopicProblemProgress, getResourceCompletionStatus, getTopicDetails } from '../services/api';
-import PathCard from '../components/Cards/PathCard';
+
 import ProgressBar from '../components/Navigation/ProgressBar';
 import { LearningPathNode } from '../types';
 

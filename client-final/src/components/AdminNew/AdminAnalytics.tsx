@@ -21,7 +21,7 @@ interface AnalyticsData {
 
 const AdminAnalytics: React.FC = () => {
   const [stats, setStats] = useState<AdminStats | null>(null);
-  const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
+  const [_analytics, setAnalytics] = useState<AnalyticsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 

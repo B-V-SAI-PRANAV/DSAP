@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
-  const [userProgress, setUserProgress] = useState<number>(0);
+  const [_userProgress, setUserProgress] = useState<number>(0);
 
   useEffect(() => {
     if (user) {
