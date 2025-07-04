@@ -9,6 +9,9 @@
   },
   "scripts": {
     "start:server": "cd server && npm start",
-    "start:client": "cd client-final && npm start"
+    "start:client": "cd client-final && npm start",
+    "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "build": "cd client-final && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client-final && npm install"
   }
 }
